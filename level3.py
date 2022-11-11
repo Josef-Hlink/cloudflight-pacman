@@ -6,8 +6,8 @@ def main():
     inputs = glob.glob('data/level3/*.in')
     for inputfile in inputs:
         print(inputfile)
-        # if 'example' in inputfile:
-        #     continue
+        if 'example' in inputfile:
+            continue
 
         with open(inputfile, 'r') as f:
             k, board, px, py, nmoves, pmoves, ghosts = read_data(f)
